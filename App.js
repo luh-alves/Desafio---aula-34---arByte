@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { View, Text, TextInput, Button, Alert, Container } from 'react-native';
+import { View, Text, TextInput, Button, Alert } from 'react-native';
 
 
 class App extends React.Component {
@@ -66,7 +66,7 @@ class App extends React.Component {
           value={this.state.conteudoTextInput}>
         </TextInput>
         <Button
-          style={{ width: 170, backgroundColor: '#99004d', marginTop: 20, }}
+          style={{ width: 170, marginTop: 40, height:80 }}
           title={'Começar'} color={'green'}
           onPress={this.startarTempo.bind(this)}
           disabled={!this.state.botaoHabilitado}>
